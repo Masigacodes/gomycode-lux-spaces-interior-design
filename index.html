@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lux Spaces Interior Design</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <style>
+    /* Additional Custom Styles */
+    .hero-bg {
+      background-image: url('Images/background.jpeg');
+      background-size: cover;
+      background-position: center;
+    }
+    .gradient-text {
+      background: linear-gradient(90deg, #fbbf24, #f472b6);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .card-shadow {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card-shadow:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body class="font-sans text-gray-800">
+  <!-- Header Section -->
+  <header class="bg-gradient-to-r from-blue-500 via-pink-500 to-purple-500 text-white shadow-lg sticky top-0 z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-3xl font-extrabold text-white">Lux Spaces Interior Design</h1>
+      <nav class="space-x-6">
+        <a href="#services" class="text-white hover:text-yellow-300 font-medium transition duration-300">Services</a>
+        <a href="#projects" class="text-white hover:text-yellow-300 font-medium transition duration-300">Projects</a>
+        <a href="#about" class="text-white hover:text-yellow-300 font-medium transition duration-300">About Us</a>
+        <a href="#contact" class="text-white hover:text-yellow-300 font-medium transition duration-300">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-bg h-screen flex items-center justify-center text-white">
+    <div class="text-center bg-gray-900 bg-opacity-50 p-10 rounded-lg">
+      <h2 class="text-5xl font-extrabold gradient-text mb-4">Transform Your Space with Style</h2>
+      <p class="text-lg mb-6">Expert interior design solutions tailored to your vision.</p>
+      <a href="#contact" class="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-3 px-6 rounded-lg text-lg">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" class="py-16 bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 text-white">
+    <div class="container mx-auto px-6 text-center">
+      <h3 class="text-4xl font-bold mb-8">About Us</h3>
+      <p class="text-lg mb-6 max-w-3xl mx-auto">At Lux Spaces Interior Design, we believe in creating spaces that inspire and reflect the personality and style of our clients. With over 10 years of experience, our expert team brings a combination of creativity and functionality to every project, from residential to commercial spaces. We work closely with our clients to understand their vision, ensuring that each design is unique, practical, and beautiful.</p>
+      <a href="#contact" class="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-3 px-6 rounded-lg text-lg">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-16 bg-gradient-to-r from-yellow-50 via-teal-50 to-blue-50">
+    <div class="container mx-auto px-6 text-center">
+      <h3 class="text-4xl font-bold mb-10 text-teal-600">Our Services</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="p-6 bg-white shadow-lg rounded-lg card-shadow">
+          <h4 class="text-2xl font-bold mb-4 text-yellow-500">Residential Design</h4>
+          <p class="text-gray-700">We create beautiful and functional living spaces that reflect your style.</p>
+        </div>
+        <div class="p-6 bg-white shadow-lg rounded-lg card-shadow">
+          <h4 class="text-2xl font-bold mb-4 text-yellow-500">Commercial Design</h4>
+          <p class="text-gray-700">Transform your office or retail space to impress clients and inspire employees.</p>
+        </div>
+        <div class="p-6 bg-white shadow-lg rounded-lg card-shadow">
+          <h4 class="text-2xl font-bold mb-4 text-yellow-500">Custom Furniture</h4>
+          <p class="text-gray-700">Tailored furniture solutions to perfectly fit your unique needs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-16 bg-gradient-to-b from-gray-100 to-gray-300">
+    <div class="container mx-auto px-6 text-center">
+      <h3 class="text-4xl font-bold mb-10 text-pink-600">Our Projects</h3>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-yellow-100 h-64 rounded-lg shadow-lg"></div>
+        <div class="bg-teal-100 h-64 rounded-lg shadow-lg"></div>
+        <div class="bg-pink-100 h-64 rounded-lg shadow-lg"></div>
+        <div class="bg-yellow-200 h-64 rounded-lg shadow-lg"></div>
+        <div class="bg-teal-200 h-64 rounded-lg shadow-lg"></div>
+        <div class="bg-pink-200 h-64 rounded-lg shadow-lg"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 bg-gradient-to-r from-purple-50 via-pink-50 to-red-50">
+    <div class="container mx-auto px-6">
+      <h3 class="text-4xl font-bold text-center mb-10 text-purple-600">Contact Us</h3>
+      <form action="#" class="max-w-lg mx-auto bg-white p-8 shadow-lg rounded-lg">
+        <div class="mb-6">
+          <label for="name" class="block text-gray-700 font-semibold mb-2">Name</label>
+          <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-yellow-500" placeholder="Your Name">
+        </div>
+        <div class="mb-6">
+          <label for="email" class="block text-gray-700 font-semibold mb-2">Email</label>
+          <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-yellow-500" placeholder="Your Email">
+        </div>
+        <div class="mb-6">
+          <label for="message" class="block text-gray-700 font-semibold mb-2">Message</label>
+          <textarea id="message" rows="4" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-yellow-500" placeholder="Your Message"></textarea>
+        </div>
+        <button type="submit" class="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-3 px-6 rounded-lg w-full">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-teal-600 via-purple-600 to-pink-600 text-white py-6">
+    <div class="container mx-auto px-6 text-center">
+      <p class="text-sm">&copy; 2025 Lux Spaces Interior Design. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
